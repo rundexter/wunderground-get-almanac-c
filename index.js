@@ -83,7 +83,7 @@ module.exports = {
             else if (data.error)
                 this.fail(data.error);
 
-            else if (data.results)
+            else if (data.response.results)
                 this.fail(['Not full input parameters']);
 
             else if (response.statusCode !== 200)
